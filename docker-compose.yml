@@ -57,8 +57,8 @@ services:
       - ./caddy:/etc/caddy
     environment:
       - ADMIN_USER=${ADMIN_USER:-admin}
-      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-mjtzHBaMZRRwerhcGIiM}
-      - ADMIN_PASSWORD_HASH=${ADMIN_PASSWORD_HASH:-$2a$14$JezR3WzI/chFjeaigrIti.PEqOH3TiUjhYSgGpoOcZc1VprfJmoIC}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-admin}
+      - ADMIN_PASSWORD_HASH=${ADMIN_PASSWORD_HASH:-hash}
     restart: unless-stopped
     networks:
       - monitor-net
